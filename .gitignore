@@ -1,6 +1,7 @@
 /out
 /edt_workspace/*
 /.idea/*
+!/.idea/misc.xml
 !/.idea/modules.xml
 !/.idea/libraries/
 !/.idea/runConfigurations/
@@ -14,3 +15,8 @@ build/
 !gradle.properties
 *.hprof
 /gradle.properties
+workspace/
+*/.classpath
+*/.project
+/dev
+.project

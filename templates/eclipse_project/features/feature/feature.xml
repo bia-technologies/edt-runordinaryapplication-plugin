@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    Copyright (c) 2020,2021 1C-Soft LLC
+    Copyright 2022 BIA-Technologies Limited Liability Company
+
+    This program and the accompanying materials are made available under
+    the terms of the Eclipse Public License 2.0 which is available at
+    https://www.eclipse.org/legal/epl-2.0/, or the Apache License, Version 2.0
+    which is available at https://www.apache.org/licenses/LICENSE-2.0.
+
+    SPDX-License-Identifier: EPL-2.0 OR Apache-2.0
+    Contributors:
+       1C-Soft LLC - initial API and implementation
+       BIA-Technologies LLC - Using a Template
+
+-->
+<feature
+      id="ru.biatech.edt.ordinaryapp.feature"
+      label="%featureName"
+      version="24.2.0.qualifier"
+      provider-name="%providerName">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <requires>
+      <import plugin="com._1c.g5.v8.dt.product.application" version="1.22.0" match="greaterOrEqual"/>
+   </requires>
+
+   <plugin
+         id="ru.biatech.edt.ordinaryapp.ui"
+         download-size="0"
+         install-size="0"
+         version="24.2.0.qualifier"
+         fragment="true"
+         unpack="false"/>
+
+   <plugin
+         id="ru.biatech.edt.ordinaryapp.core"
+         download-size="0"
+         install-size="0"
+         version="24.2.0.qualifier"
+         fragment="true"
+         unpack="false"/>
+
+</feature>

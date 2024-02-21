@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<fragment>
+   <extension point="com._1c.g5.v8.dt.platform.services.core.runtimeComponentTypes">
+      <type
+            id="ru.biatech.edt.ordinaryapp.OrdinaryClient"
+            name="Обычное приложение"
+            visible="true">
+      </type>
+   </extension>
+
+    <extension point="com._1c.g5.v8.dt.platform.services.core.runtimeComponentExecutors">
+        <executor
+                class="com._1c.g5.v8.dt.internal.platform.services.core.PlatformServicesExecutableExtensionFactory:ru.biatech.edt.ordinaryapp.core.OrdinaryAppLauncher"
+                type="ru.biatech.edt.ordinaryapp.OrdinaryClient">
+            <runtime>
+                <since value="com._1c.g5.v8.dt.platform.runtime.8.3.8"/>
+            </runtime>
+        </executor>    </extension>
+    <extension
+          point="com._1c.g5.v8.dt.platform.services.core.runtimeComponentResolvers">
+      <resolver
+            class="com._1c.g5.v8.dt.internal.platform.services.core.PlatformServicesExecutableExtensionFactory:ru.biatech.edt.ordinaryapp.core.OrdinaryAppComponentResolver"
+            runtimeType="com._1c.g5.v8.dt.platform.services.core.runtimeType.EnterprisePlatform">
+      </resolver>
+    </extension>
+</fragment>

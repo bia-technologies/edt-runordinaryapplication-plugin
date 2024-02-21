@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: OrdinaryApp.Core
+Bundle-SymbolicName: ru.biatech.edt.ordinaryapp.core;singleton:=true
+Automatic-Module-Name: ru.biatech.edt.ordinaryapp.core
+Bundle-Version: 24.2.0.qualifier
+Bundle-Vendor: BIA-Technologies LLC
+Fragment-Host: com._1c.g5.v8.dt.platform.services.core
+Bundle-RequiredExecutionEnvironment: JavaSE-11
+Excluded-Imports: *.internal.*,*

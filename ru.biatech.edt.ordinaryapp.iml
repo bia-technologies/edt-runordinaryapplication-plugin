@@ -2,11 +2,7 @@
 <module type="JAVA_MODULE" version="4">
   <component name="FacetManager">
     <facet type="Osmorc" name="OSGi">
-      <configuration manifestGenerationMode="Manually" manifestLocation="META-INF/MANIFEST.MF" jarfileLocation="$EDT_PATH$\dropins\boundle.jar" outputPathType="SpecificOutputPath" bndFileLocation="" bundlorFileLocation="" bundleActivator="ru.biatech.edt.xtest.Activator" bundleSymbolicName="ru.biatech.edt.xtest;singleton=true" bundleVersion="1.0.2" ignoreFilePattern="" useProjectDefaultManifestFileLocation="false" alwaysRebuildBundleJAR="true" doNotSynchronizeWithMaven="false">
-        <additionalProperties>
-          <property key="Bundle-Vendor" value="BIA Technologies" />
-          <property key="Bundle-Name" value="Модульные тесты для 1С" />
-        </additionalProperties>
+      <configuration manifestGenerationMode="Manually" manifestLocation="META-INF/MANIFEST.MF" jarfileLocation="$EDT_PATH$\dropins\boundle.jar" outputPathType="SpecificOutputPath" bndFileLocation="" bundlorFileLocation="" bundleActivator="ru.biatech.edt.ordinaryapp.Activator" bundleSymbolicName="ru.biatech.edt.ordinaryapp;singleton=true" ignoreFilePattern="" useProjectDefaultManifestFileLocation="false" alwaysRebuildBundleJAR="true" doNotSynchronizeWithMaven="false">
         <additionalJARContents>
           <entry source="$MODULE_DIR$/plugin.xml" dest="plugin.xml" />
           <entry source="$MODULE_DIR$/src/main/resources" dest="resources" />

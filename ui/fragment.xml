@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<fragment>
+    <extension point="org.eclipse.debug.ui.launchShortcuts">
+      <shortcut
+         class="com._1c.g5.v8.dt.internal.launching.ui.LaunchingUiExecutableExtensionFactory:ru.biatech.edt.ordinaryapp.ui.OrdinaryAppShortcut"
+         description="Обычное приложение"
+         icon="resources/icon_v8.1.ico"
+         id="ru.biatech.edt.ordinaryapp.OrdinaryAppShortcut"
+         label="Обычное приложение"
+         modes="run, debug">
+         <contextualLaunch>
+            <enablement>
+                <test property="com._1c.g5.v8.dt.platform.services.ui.infobasePersistenceSupported"/>
+            </enablement>
+         </contextualLaunch>
+         <configurationType
+            id="com._1c.g5.v8.dt.launching.core.RuntimeClient">
+         </configurationType>
+      </shortcut>
+    </extension>
+</fragment>

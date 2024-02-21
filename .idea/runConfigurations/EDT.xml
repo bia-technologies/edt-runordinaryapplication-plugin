@@ -2,16 +2,17 @@
   <configuration default="false" name="EDT" type="Application" factoryName="Application" show_console_on_std_err="true" show_console_on_std_out="true">
     <option name="ALTERNATIVE_JRE_PATH" value="11-full" />
     <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+    <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
     <option name="MAIN_CLASS_NAME" value="org.eclipse.equinox.launcher.Main" />
-    <module name="ru.biatech.edt.ordinary" />
-    <option name="PROGRAM_PARAMETERS" value="-XstartOnFirstThread -data C:\rep\java\ru.biatech.edt.testrunner\edt_workspace" />
+    <module name="core" />
+    <option name="PROGRAM_PARAMETERS" value="-data edt_workspace" />
     <selectedOptions>
       <option name="environmentVariables" visible="false" />
     </selectedOptions>
     <shortenClasspath name="ARGS_FILE" />
     <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/" />
     <method v="2">
-      <option name="Make" enabled="true" />
+      <option name="MakeProject" enabled="true" />
     </method>
   </configuration>
 </component>
