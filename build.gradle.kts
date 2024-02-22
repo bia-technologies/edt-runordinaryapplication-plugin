@@ -18,6 +18,7 @@ val pluginBuildPath = layout.buildDirectory.dir("buildPlugin").get().asFile
 val publishTo = (findProperty("publishTo") ?: "").toString()
 
 var subProjects = arrayOf("core", "ui")
+val mvnCommand = if (Os.isFamily(Os.FAMILY_WINDOWS)) "mvn.cmd" else "mvn"
 
 repositories {
     mavenCentral()
@@ -96,11 +97,7 @@ tasks.register<Exec>("buildPlugin") {
 
     environment("MAVEN_OPTS", "-Dhttps.protocols=TLSv1.2")
 
-    if (Os.isFamily(Os.FAMILY_WINDOWS)) {
-        commandLine("mvn.cmd", "dependency:resolve", "package")
-    } else {
-        commandLine("mvn", "dependency:resolve", "package")
-    }
+    commandLine(mvnCommand, "dependency:resolve", "package")
 
     dependsOn(tasks.named("buildPlugin-copyFiles"))
     group = "build"
